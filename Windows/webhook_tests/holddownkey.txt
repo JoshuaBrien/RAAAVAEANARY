@@ -1,0 +1,7 @@
+REM Press Key every X seconds
+REM how long to wait till press key / 2
+DEFAULT_STRING_DELAY 30000
+REM key to press
+STRING X
+REM number of times to do it
+REPEAT 40
