@@ -1,0 +1,5 @@
+REM By Joshua O' Brien
+REM scheduled task on a remote computer, more info here https://lolbas-project.github.io/lolbas/Binaries/Schtasks/
+REM uses schtasks_exe.ps1 , by default runs only if computer is on AC power
+
+
