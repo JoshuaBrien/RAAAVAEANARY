@@ -1,0 +1,6 @@
+REM By Joshua O' Brien
+REM uses at.exe to schedule a task, deprecated 
+GUI r
+DEFAULT_DELAY 300
+STRING at (time) calc.exe
+ENTER

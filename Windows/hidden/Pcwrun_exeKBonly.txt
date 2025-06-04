@@ -1,0 +1,5 @@
+REM By Joshua O' Brien
+REM runs the target program with program compatibility wizard, more info here https://lolbas-project.github.io/lolbas/Binaries/Pcwrun/
+DEFAULT_DELAY 350   
+STRING Pcwrun.exe (path to .EXE here)
+ENTER
