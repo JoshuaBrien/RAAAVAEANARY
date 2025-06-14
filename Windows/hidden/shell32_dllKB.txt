@@ -1,0 +1,7 @@
+REM by JOB
+REM Launch an executable by calling the ShellExec_RunDLL function, more info here https://lolbas-project.github.io/lolbas/Libraries/Shell32/
+GUI r 
+DEFAULT_DELAY 350
+STRING rundll32.exe shell32.dll,ShellExec_RunDLL calc.exe
+ENTER
+

